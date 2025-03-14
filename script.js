@@ -1861,6 +1861,194 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   ]
  },
  {
+  "minimumZoomFactor": 0.5,
+  "class": "Map",
+  "fieldOfViewOverlayInsideColor": "#FFFFFF",
+  "fieldOfViewOverlayOutsideOpacity": 0,
+  "fieldOfViewOverlayRadiusScale": 0.3,
+  "scaleMode": "fit_inside",
+  "label": "Schooler - Floorplan 1 of 1",
+  "width": 1251,
+  "id": "map_8D053ADB_9772_3B27_41E2_3196E76F64F3",
+  "thumbnailUrl": "media/map_8D053ADB_9772_3B27_41E2_3196E76F64F3_t.png",
+  "image": {
+   "class": "ImageResource",
+   "levels": [
+    {
+     "height": 777,
+     "width": 1251,
+     "url": "media/map_8D053ADB_9772_3B27_41E2_3196E76F64F3.png",
+     "class": "ImageResourceLevel"
+    },
+    {
+     "height": 388,
+     "width": 625,
+     "url": "media/map_8D053ADB_9772_3B27_41E2_3196E76F64F3_lq.png",
+     "class": "ImageResourceLevel",
+     "grayscale": true
+    }
+   ]
+  },
+  "height": 777,
+  "fieldOfViewOverlayInsideOpacity": 0.4,
+  "fieldOfViewOverlayOutsideColor": "#000000",
+  "maximumZoomFactor": 1.2,
+  "initialZoomFactor": 1
+ },
+ {
+  "id": "MapViewerMapPlayer",
+  "class": "MapPlayer",
+  "viewerArea": {
+   "playbackBarBackgroundColorDirection": "vertical",
+   "toolTipFontStyle": "normal",
+   "toolTipShadowBlurRadius": 3,
+   "playbackBarHeadWidth": 6,
+   "toolTipDisplayTime": 600,
+   "playbackBarHeadShadow": true,
+   "playbackBarBackgroundColor": [
+    "#EEEEEE",
+    "#CCCCCC"
+   ],
+   "playbackBarProgressOpacity": 1,
+   "playbackBarHeight": 20,
+   "toolTipPaddingBottom": 4,
+   "toolTipTextShadowColor": "#000000",
+   "progressLeft": 10,
+   "class": "ViewerArea",
+   "playbackBarHeadBackgroundColor": [
+    "#111111",
+    "#666666"
+   ],
+   "playbackBarProgressBackgroundColorDirection": "vertical",
+   "playbackBarProgressBorderColor": "#000000",
+   "shadow": false,
+   "progressBorderColor": "#AAAAAA",
+   "playbackBarBottom": 0,
+   "playbackBarBorderRadius": 4,
+   "playbackBarBorderColor": "#AAAAAA",
+   "progressBarBorderRadius": 4,
+   "paddingLeft": 0,
+   "paddingRight": 0,
+   "toolTipBorderRadius": 3,
+   "progressBackgroundColorDirection": "vertical",
+   "playbackBarHeadBorderSize": 0,
+   "toolTipFontFamily": "Arial",
+   "toolTipBorderColor": "#767676",
+   "playbackBarProgressBorderSize": 0,
+   "toolTipPaddingRight": 6,
+   "toolTipShadowOpacity": 1,
+   "paddingTop": 0,
+   "toolTipOpacity": 1,
+   "transitionDuration": 500,
+   "toolTipBorderSize": 1,
+   "playbackBarHeadBorderColor": "#000000",
+   "playbackBarHeadBackgroundColorRatios": [
+    0,
+    1
+   ],
+   "minHeight": 1,
+   "toolTipShadowColor": "#333333",
+   "toolTipPaddingTop": 4,
+   "playbackBarHeadShadowVerticalLength": 0,
+   "playbackBarHeadBorderRadius": 0,
+   "playbackBarProgressBackgroundColor": [
+    "#222222",
+    "#444444"
+   ],
+   "playbackBarHeadBackgroundColorDirection": "vertical",
+   "playbackBarHeadShadowBlurRadius": 3,
+   "playbackBarHeadShadowOpacity": 0.7,
+   "playbackBarProgressBackgroundColorRatios": [
+    0,
+    1
+   ],
+   "paddingBottom": 0,
+   "width": "100%",
+   "toolTipShadowVerticalLength": 0,
+   "progressBackgroundColorRatios": [
+    0,
+    1
+   ],
+   "toolTipTextShadowBlurRadius": 3,
+   "playbackBarLeft": 0,
+   "progressBorderRadius": 4,
+   "playbackBarHeadHeight": 30,
+   "transitionMode": "blending",
+   "progressBorderSize": 2,
+   "height": "100%",
+   "toolTipBackgroundColor": "#F6F6F6",
+   "toolTipTextShadowOpacity": 0,
+   "toolTipShadowHorizontalLength": 0,
+   "toolTipFontColor": "#606060",
+   "progressBarBackgroundColorRatios": [
+    0,
+    1
+   ],
+   "progressBarBorderColor": "#000000",
+   "toolTipFontSize": 12,
+   "playbackBarOpacity": 1,
+   "minWidth": 1,
+   "progressBarOpacity": 1,
+   "progressBackgroundOpacity": 1,
+   "playbackBarProgressBorderRadius": 0,
+   "top": "0%",
+   "progressBackgroundColor": [
+    "#EEEEEE",
+    "#CCCCCC"
+   ],
+   "playbackBarHeadOpacity": 1,
+   "toolTipFontWeight": "normal",
+   "progressBarBorderSize": 1,
+   "borderRadius": 0,
+   "progressBarBackgroundColorDirection": "vertical",
+   "playbackBarHeadShadowHorizontalLength": 0,
+   "progressBarBackgroundColor": [
+    "#222222",
+    "#444444"
+   ],
+   "id": "MapViewer",
+   "progressHeight": 20,
+   "toolTipPaddingLeft": 6,
+   "progressOpacity": 1,
+   "toolTipShadowSpread": 0,
+   "progressRight": 10,
+   "left": "0%",
+   "progressBottom": 2,
+   "borderSize": 0,
+   "playbackBarRight": 0,
+   "playbackBarBackgroundOpacity": 1,
+   "playbackBarHeadShadowColor": "#000000",
+   "playbackBarBorderSize": 2
+  },
+  "movementMode": "constrained",
+  "buttonZoomOut": "this.IconButton_4EEC4AA5_5E2B_1FC1_41C5_FA77C28EB625",
+  "buttonZoomIn": "this.IconButton_4EEC4AA6_5E2B_1FC3_41BA_7BB1D3A7F411"
+ },
+ {
+  "id": "playList_8D41E158_9772_0921_41C7_562B462F3842",
+  "class": "PlayList",
+  "items": [
+   {
+    "begin": "this.MapViewerMapPlayer.set('movementMode', 'free_drag_and_rotation')",
+    "player": "this.MapViewerMapPlayer",
+    "class": "MapPlayListItem",
+    "media": "this.map_8D053ADB_9772_3B27_41E2_3196E76F64F3"
+   }
+  ]
+ },
+ {
+  "id": "playList_8D41C158_9772_0921_41DE_6B8FCB3BD0F2",
+  "class": "PlayList",
+  "items": [
+   {
+    "begin": "this.MapViewerMapPlayer.set('movementMode', 'free_drag_and_rotation')",
+    "player": "this.MapViewerMapPlayer",
+    "class": "MapPlayListItem",
+    "media": "this.map_8D053ADB_9772_3B27_41E2_3196E76F64F3"
+   }
+  ]
+ },
+ {
   "id": "audio_835073D3_96B2_0920_41C5_61484D4386FB",
   "class": "MediaAudio",
   "autoplay": true,
@@ -2494,128 +2682,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  },
  {
   "children": [
-   {
-    "playbackBarBackgroundColorDirection": "vertical",
-    "toolTipFontStyle": "normal",
-    "toolTipShadowBlurRadius": 3,
-    "playbackBarHeadWidth": 6,
-    "toolTipDisplayTime": 600,
-    "playbackBarHeadShadow": true,
-    "playbackBarBackgroundColor": [
-     "#EEEEEE",
-     "#CCCCCC"
-    ],
-    "playbackBarProgressOpacity": 1,
-    "playbackBarHeight": 20,
-    "toolTipPaddingBottom": 4,
-    "toolTipTextShadowColor": "#000000",
-    "progressLeft": 10,
-    "class": "ViewerArea",
-    "playbackBarHeadBackgroundColor": [
-     "#111111",
-     "#666666"
-    ],
-    "playbackBarProgressBackgroundColorDirection": "vertical",
-    "playbackBarProgressBorderColor": "#000000",
-    "shadow": false,
-    "progressBorderColor": "#AAAAAA",
-    "playbackBarBottom": 0,
-    "playbackBarBorderRadius": 4,
-    "playbackBarBorderColor": "#AAAAAA",
-    "progressBarBorderRadius": 4,
-    "paddingLeft": 0,
-    "paddingRight": 0,
-    "toolTipBorderRadius": 3,
-    "progressBackgroundColorDirection": "vertical",
-    "playbackBarHeadBorderSize": 0,
-    "toolTipFontFamily": "Arial",
-    "toolTipBorderColor": "#767676",
-    "playbackBarProgressBorderSize": 0,
-    "toolTipPaddingRight": 6,
-    "toolTipShadowOpacity": 1,
-    "paddingTop": 0,
-    "toolTipOpacity": 1,
-    "transitionDuration": 500,
-    "toolTipBorderSize": 1,
-    "playbackBarHeadBorderColor": "#000000",
-    "playbackBarHeadBackgroundColorRatios": [
-     0,
-     1
-    ],
-    "minHeight": 1,
-    "toolTipShadowColor": "#333333",
-    "toolTipPaddingTop": 4,
-    "playbackBarHeadShadowVerticalLength": 0,
-    "playbackBarHeadBorderRadius": 0,
-    "playbackBarProgressBackgroundColor": [
-     "#222222",
-     "#444444"
-    ],
-    "playbackBarHeadBackgroundColorDirection": "vertical",
-    "playbackBarHeadShadowBlurRadius": 3,
-    "playbackBarHeadShadowOpacity": 0.7,
-    "playbackBarProgressBackgroundColorRatios": [
-     0,
-     1
-    ],
-    "paddingBottom": 0,
-    "width": "100%",
-    "toolTipShadowVerticalLength": 0,
-    "progressBackgroundColorRatios": [
-     0,
-     1
-    ],
-    "toolTipTextShadowBlurRadius": 3,
-    "playbackBarLeft": 0,
-    "progressBorderRadius": 4,
-    "playbackBarHeadHeight": 30,
-    "transitionMode": "blending",
-    "progressBorderSize": 2,
-    "height": "100%",
-    "toolTipBackgroundColor": "#F6F6F6",
-    "toolTipTextShadowOpacity": 0,
-    "toolTipShadowHorizontalLength": 0,
-    "toolTipFontColor": "#606060",
-    "progressBarBackgroundColorRatios": [
-     0,
-     1
-    ],
-    "progressBarBorderColor": "#000000",
-    "toolTipFontSize": 12,
-    "playbackBarOpacity": 1,
-    "minWidth": 1,
-    "progressBarOpacity": 1,
-    "progressBackgroundOpacity": 1,
-    "playbackBarProgressBorderRadius": 0,
-    "top": "0%",
-    "progressBackgroundColor": [
-     "#EEEEEE",
-     "#CCCCCC"
-    ],
-    "playbackBarHeadOpacity": 1,
-    "toolTipFontWeight": "normal",
-    "progressBarBorderSize": 1,
-    "borderRadius": 0,
-    "progressBarBackgroundColorDirection": "vertical",
-    "playbackBarHeadShadowHorizontalLength": 0,
-    "progressBarBackgroundColor": [
-     "#222222",
-     "#444444"
-    ],
-    "id": "MapViewer",
-    "progressHeight": 20,
-    "toolTipPaddingLeft": 6,
-    "progressOpacity": 1,
-    "toolTipShadowSpread": 0,
-    "progressRight": 10,
-    "left": "0%",
-    "progressBottom": 2,
-    "borderSize": 0,
-    "playbackBarRight": 0,
-    "playbackBarBackgroundOpacity": 1,
-    "playbackBarHeadShadowColor": "#000000",
-    "playbackBarBorderSize": 2
-   }
+   "this.MapViewer"
   ],
   "backgroundColorRatios": [
    0,
@@ -2659,7 +2726,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "gap": 10
  }
 ], 
- "start": "this.playAudioList([this.audio_835073D3_96B2_0920_41C5_61484D4386FB, this.audio_80D03488_96B2_0F20_41B6_5C09AAB528E3]); this.syncPlaylists([this.thumbnaillist5245_playlist,this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B_playlist,this.mainPlayList]); this.mainPlayList.set('selectedIndex', 0)",
+ "start": "this.playAudioList([this.audio_835073D3_96B2_0920_41C5_61484D4386FB, this.audio_80D03488_96B2_0F20_41B6_5C09AAB528E3]); this.syncPlaylists([this.thumbnaillist5245_playlist,this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B_playlist,this.mainPlayList]); this.mainPlayList.set('selectedIndex', 0); this.playList_8D41C158_9772_0921_41DE_6B8FCB3BD0F2.set('selectedIndex', 0)",
  "mouseWheelEnabled": true,
  "horizontalAlign": "left",
  "paddingBottom": 0,
