@@ -1325,6 +1325,30 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "automaticZoomSpeed": 10
  },
  {
+  "class": "Video",
+  "label": "Dream Silver Drone Footage1 Mountain View Homes",
+  "thumbnailUrl": "media/video_80DC9628_96B2_0B61_41D1_EC0F96411FC2_t.jpg",
+  "scaleMode": "fit_inside",
+  "width": 1920,
+  "id": "video_80DC9628_96B2_0B61_41D1_EC0F96411FC2",
+  "loop": false,
+  "video": {
+   "height": 1080,
+   "mp4Url": "media/video_80DC9628_96B2_0B61_41D1_EC0F96411FC2.mp4",
+   "width": 1920,
+   "class": "VideoResource"
+  },
+  "height": 1080
+ },
+ {
+  "buttonRestart": "this.IconButton_4EEC4AA5_5E2B_1FC1_41CD_C80D0BF61440",
+  "buttonPause": "this.IconButton_61E428A1_4578_EA6B_41C7_D3AB6346672D",
+  "id": "MainViewerVideoPlayer",
+  "displayPlaybackBar": true,
+  "viewerArea": "this.MainViewer",
+  "class": "VideoPlayer"
+ },
+ {
   "id": "mainPlayList",
   "class": "PlayList",
   "items": [
@@ -1434,12 +1458,19 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "camera": "this.panorama_85A13955_96B2_7923_41CE_A949C01A69E7_camera"
    },
    {
-    "player": "this.MainViewerPanoramaPlayer",
+    "begin": "this.setEndToItemIndex(this.mainPlayList, 15, 16)",
     "class": "PanoramaPlayListItem",
     "media": "this.panorama_82F4644C_96B2_0F21_41E1_7B032B41F38A",
-    "begin": "this.setEndToItemIndex(this.mainPlayList, 15, 0)",
-    "camera": "this.panorama_82F4644C_96B2_0F21_41E1_7B032B41F38A_camera",
-    "end": "this.trigger('tourEnded')"
+    "player": "this.MainViewerPanoramaPlayer",
+    "camera": "this.panorama_82F4644C_96B2_0F21_41E1_7B032B41F38A_camera"
+   },
+   {
+    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 16, 0)",
+    "class": "VideoPlayListItem",
+    "player": "this.MainViewerVideoPlayer",
+    "media": "this.video_80DC9628_96B2_0B61_41D1_EC0F96411FC2",
+    "end": "this.trigger('tourEnded')",
+    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 16, '#000000')"
    }
   ]
  },
@@ -1553,11 +1584,18 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "camera": "this.panorama_85A13955_96B2_7923_41CE_A949C01A69E7_camera"
    },
    {
-    "begin": "this.setEndToItemIndex(this.thumbnaillist5245_playlist, 15, 0)",
+    "begin": "this.setEndToItemIndex(this.thumbnaillist5245_playlist, 15, 16)",
     "class": "PanoramaPlayListItem",
     "media": "this.panorama_82F4644C_96B2_0F21_41E1_7B032B41F38A",
     "player": "this.MainViewerPanoramaPlayer",
     "camera": "this.panorama_82F4644C_96B2_0F21_41E1_7B032B41F38A_camera"
+   },
+   {
+    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.thumbnaillist5245_playlist, 16, 0)",
+    "class": "VideoPlayListItem",
+    "player": "this.MainViewerVideoPlayer",
+    "media": "this.video_80DC9628_96B2_0B61_41D1_EC0F96411FC2",
+    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.thumbnaillist5245_playlist, 16, '#000000')"
    }
   ]
  },
@@ -1671,13 +1709,46 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "camera": "this.panorama_85A13955_96B2_7923_41CE_A949C01A69E7_camera"
    },
    {
-    "begin": "this.setEndToItemIndex(this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B_playlist, 15, 0)",
+    "begin": "this.setEndToItemIndex(this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B_playlist, 15, 16)",
     "class": "PanoramaPlayListItem",
     "media": "this.panorama_82F4644C_96B2_0F21_41E1_7B032B41F38A",
     "player": "this.MainViewerPanoramaPlayer",
     "camera": "this.panorama_82F4644C_96B2_0F21_41E1_7B032B41F38A_camera"
+   },
+   {
+    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B_playlist, 16, 0)",
+    "class": "VideoPlayListItem",
+    "player": "this.MainViewerVideoPlayer",
+    "media": "this.video_80DC9628_96B2_0B61_41D1_EC0F96411FC2",
+    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B_playlist, 16, '#000000')"
    }
   ]
+ },
+ {
+  "id": "audio_835073D3_96B2_0920_41C5_61484D4386FB",
+  "class": "MediaAudio",
+  "autoplay": true,
+  "audio": {
+   "mp3Url": "media/audio_835073D3_96B2_0920_41C5_61484D4386FB.mp3",
+   "class": "AudioResource",
+   "oggUrl": "media/audio_835073D3_96B2_0920_41C5_61484D4386FB.ogg"
+  },
+  "data": {
+   "label": "Woke up to the mist rollin\u2019 off the Hood"
+  }
+ },
+ {
+  "id": "audio_80D03488_96B2_0F20_41B6_5C09AAB528E3",
+  "class": "MediaAudio",
+  "autoplay": true,
+  "audio": {
+   "mp3Url": "media/audio_80D03488_96B2_0F20_41B6_5C09AAB528E3.mp3",
+   "class": "AudioResource",
+   "oggUrl": "media/audio_80D03488_96B2_0F20_41B6_5C09AAB528E3.ogg"
+  },
+  "data": {
+   "label": "Woke up to the mist rollin\u2019 off the Hood"
+  }
  }
 ], "children": [
  {
@@ -2452,7 +2523,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "gap": 10
  }
 ], 
- "start": "this.syncPlaylists([this.thumbnaillist5245_playlist,this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B_playlist,this.mainPlayList]); this.mainPlayList.set('selectedIndex', 0)",
+ "start": "this.syncPlaylists([this.thumbnaillist5245_playlist,this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B_playlist,this.mainPlayList]); this.mainPlayList.set('selectedIndex', 0); this.playAudioList([this.audio_835073D3_96B2_0920_41C5_61484D4386FB, this.audio_80D03488_96B2_0F20_41B6_5C09AAB528E3])",
  "mouseWheelEnabled": true,
  "horizontalAlign": "left",
  "paddingBottom": 0,
