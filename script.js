@@ -1365,6 +1365,225 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "height": 1080
  },
  {
+  "class": "PhotoAlbum",
+  "label": "Photo Album 20250314_110258",
+  "playList": {
+   "id": "album_8F4DE991_9752_1923_41D3_29F0B61E31E2_AlbumPlayList",
+   "class": "PhotoPlayList",
+   "items": [
+    {
+     "media": {
+      "image": {
+       "class": "ImageResource",
+       "levels": [
+        {
+         "url": "media/album_8F4DE991_9752_1923_41D3_29F0B61E31E2_0.jpg",
+         "class": "ImageResourceLevel"
+        }
+       ]
+      },
+      "class": "Photo",
+      "label": "20250314_110258",
+      "thumbnailUrl": "media/album_8F4DE991_9752_1923_41D3_29F0B61E31E2_0_t.jpg",
+      "width": 4000,
+      "id": "album_8F4DE991_9752_1923_41D3_29F0B61E31E2_0",
+      "height": 1868,
+      "duration": 5000
+     },
+     "camera": {
+      "scaleMode": "fit_outside",
+      "class": "MovementPhotoCamera",
+      "targetPosition": {
+       "x": "0.36",
+       "class": "PhotoCameraPosition",
+       "y": "0.49",
+       "zoomFactor": 1.1
+      },
+      "duration": 5000,
+      "initialPosition": {
+       "x": "0.50",
+       "class": "PhotoCameraPosition",
+       "y": "0.50",
+       "zoomFactor": 1
+      },
+      "easing": "linear"
+     },
+     "class": "PhotoPlayListItem"
+    },
+    {
+     "media": {
+      "image": {
+       "class": "ImageResource",
+       "levels": [
+        {
+         "url": "media/album_8F4DE991_9752_1923_41D3_29F0B61E31E2_1.JPG",
+         "class": "ImageResourceLevel"
+        }
+       ]
+      },
+      "class": "Photo",
+      "label": "DJI_0358",
+      "thumbnailUrl": "media/album_8F4DE991_9752_1923_41D3_29F0B61E31E2_1_t.jpg",
+      "width": 4000,
+      "id": "album_8F4DE991_9752_1923_41D3_29F0B61E31E2_1",
+      "height": 2250,
+      "duration": 5000
+     },
+     "camera": {
+      "scaleMode": "fit_outside",
+      "class": "MovementPhotoCamera",
+      "targetPosition": {
+       "x": "0.69",
+       "class": "PhotoCameraPosition",
+       "y": "0.66",
+       "zoomFactor": 1.1
+      },
+      "duration": 5000,
+      "initialPosition": {
+       "x": "0.50",
+       "class": "PhotoCameraPosition",
+       "y": "0.50",
+       "zoomFactor": 1
+      },
+      "easing": "linear"
+     },
+     "class": "PhotoPlayListItem"
+    },
+    {
+     "media": {
+      "image": {
+       "class": "ImageResource",
+       "levels": [
+        {
+         "url": "media/album_8F4DE991_9752_1923_41D3_29F0B61E31E2_2.JPG",
+         "class": "ImageResourceLevel"
+        }
+       ]
+      },
+      "class": "Photo",
+      "label": "DJI_0361",
+      "thumbnailUrl": "media/album_8F4DE991_9752_1923_41D3_29F0B61E31E2_2_t.jpg",
+      "width": 4000,
+      "id": "album_8F4DE991_9752_1923_41D3_29F0B61E31E2_2",
+      "height": 2250,
+      "duration": 5000
+     },
+     "camera": {
+      "scaleMode": "fit_outside",
+      "class": "MovementPhotoCamera",
+      "targetPosition": {
+       "x": "0.66",
+       "class": "PhotoCameraPosition",
+       "y": "0.58",
+       "zoomFactor": 1.1
+      },
+      "duration": 5000,
+      "initialPosition": {
+       "x": "0.50",
+       "class": "PhotoCameraPosition",
+       "y": "0.50",
+       "zoomFactor": 1
+      },
+      "easing": "linear"
+     },
+     "class": "PhotoPlayListItem"
+    },
+    {
+     "media": {
+      "image": {
+       "class": "ImageResource",
+       "levels": [
+        {
+         "url": "media/album_8F4DE991_9752_1923_41D3_29F0B61E31E2_3.JPG",
+         "class": "ImageResourceLevel"
+        }
+       ]
+      },
+      "class": "Photo",
+      "label": "DJI_0364",
+      "thumbnailUrl": "media/album_8F4DE991_9752_1923_41D3_29F0B61E31E2_3_t.jpg",
+      "width": 4000,
+      "id": "album_8F4DE991_9752_1923_41D3_29F0B61E31E2_3",
+      "height": 2250,
+      "duration": 5000
+     },
+     "camera": {
+      "scaleMode": "fit_outside",
+      "class": "MovementPhotoCamera",
+      "targetPosition": {
+       "x": "0.56",
+       "class": "PhotoCameraPosition",
+       "y": "0.33",
+       "zoomFactor": 1.1
+      },
+      "duration": 5000,
+      "initialPosition": {
+       "x": "0.50",
+       "class": "PhotoCameraPosition",
+       "y": "0.50",
+       "zoomFactor": 1
+      },
+      "easing": "linear"
+     },
+     "class": "PhotoPlayListItem"
+    },
+    {
+     "media": {
+      "image": {
+       "class": "ImageResource",
+       "levels": [
+        {
+         "url": "media/album_8F4DE991_9752_1923_41D3_29F0B61E31E2_4.JPG",
+         "class": "ImageResourceLevel"
+        }
+       ]
+      },
+      "class": "Photo",
+      "label": "DJI_0366",
+      "thumbnailUrl": "media/album_8F4DE991_9752_1923_41D3_29F0B61E31E2_4_t.jpg",
+      "width": 4000,
+      "id": "album_8F4DE991_9752_1923_41D3_29F0B61E31E2_4",
+      "height": 2250,
+      "duration": 5000
+     },
+     "camera": {
+      "scaleMode": "fit_outside",
+      "class": "MovementPhotoCamera",
+      "targetPosition": {
+       "x": "0.27",
+       "class": "PhotoCameraPosition",
+       "y": "0.69",
+       "zoomFactor": 1.1
+      },
+      "duration": 5000,
+      "initialPosition": {
+       "x": "0.50",
+       "class": "PhotoCameraPosition",
+       "y": "0.50",
+       "zoomFactor": 1
+      },
+      "easing": "linear"
+     },
+     "class": "PhotoPlayListItem"
+    }
+   ]
+  },
+  "thumbnailUrl": "media/album_8F4DE991_9752_1923_41D3_29F0B61E31E2_t.png",
+  "id": "album_8F4DE991_9752_1923_41D3_29F0B61E31E2"
+ },
+ {
+  "buttonRestart": "this.IconButton_4EEC4AA5_5E2B_1FC1_41CD_C80D0BF61440",
+  "buttonPause": "this.IconButton_61E428A1_4578_EA6B_41C7_D3AB6346672D",
+  "id": "MainViewerPhotoAlbumPlayer",
+  "class": "PhotoAlbumPlayer",
+  "viewerArea": "this.MainViewer"
+ },
+ "this.album_8F4DE991_9752_1923_41D3_29F0B61E31E2_0",
+ "this.album_8F4DE991_9752_1923_41D3_29F0B61E31E2_1",
+ "this.album_8F4DE991_9752_1923_41D3_29F0B61E31E2_2",
+ "this.album_8F4DE991_9752_1923_41D3_29F0B61E31E2_3",
+ "this.album_8F4DE991_9752_1923_41D3_29F0B61E31E2_4",
+ {
   "id": "mainPlayList",
   "class": "PlayList",
   "items": [
@@ -1488,12 +1707,18 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 16, '#000000')"
    },
    {
-    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 17, 0)",
+    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.mainPlayList, 17, 18)",
     "class": "VideoPlayListItem",
     "player": "this.MainViewerVideoPlayer",
     "media": "this.video_801D3D89_9756_3923_41D6_1BDB63BADD70",
-    "end": "this.trigger('tourEnded')",
     "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 17, '#000000')"
+   },
+   {
+    "begin": "this.setEndToItemIndex(this.mainPlayList, 18, 0)",
+    "class": "PhotoAlbumPlayListItem",
+    "player": "this.MainViewerPhotoAlbumPlayer",
+    "media": "this.album_8F4DE991_9752_1923_41D3_29F0B61E31E2",
+    "end": "this.trigger('tourEnded')"
    }
   ]
  },
