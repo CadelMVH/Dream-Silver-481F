@@ -1579,11 +1579,11 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.mainPlayList, 17, '#000000')"
    },
    {
-    "begin": "this.setEndToItemIndex(this.mainPlayList, 18, 0)",
+    "begin": "this.setEndToItemIndex(this.mainPlayList, 18, 0); this.setComponentVisibility(this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B, true, -1, this.effect_B722A3D5_97D6_0923_41C0_36B2EF02F096, 'showEffect', false)",
     "class": "PhotoAlbumPlayListItem",
     "player": "this.MainViewerPhotoAlbumPlayer",
     "media": "this.album_8F4DE991_9752_1923_41D3_29F0B61E31E2",
-    "end": "this.trigger('tourEnded')"
+    "end": "this.setComponentVisibility(this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B, false, -1, this.effect_B722B3D5_97D6_0922_41B9_9858029B4726, 'hideEffect', false); this.setComponentVisibility(this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B, false, -1, this.effect_B722B3D5_97D6_0922_41B9_9858029B4726, 'hideEffect', false); this.trigger('tourEnded')"
    }
   ]
  },
@@ -1702,6 +1702,26 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "media": "this.panorama_82F4644C_96B2_0F21_41E1_7B032B41F38A",
     "player": "this.MainViewerPanoramaPlayer",
     "camera": "this.panorama_82F4644C_96B2_0F21_41E1_7B032B41F38A_camera"
+   }
+  ]
+ },
+ {
+  "id": "ThumbnailList_881F2652_97D2_0B21_41E2_7C5FB1597965_playlist",
+  "class": "PlayList",
+  "items": [
+   {
+    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.ThumbnailList_881F2652_97D2_0B21_41E2_7C5FB1597965_playlist, 0, 1)",
+    "class": "VideoPlayListItem",
+    "player": "this.MainViewerVideoPlayer",
+    "media": "this.video_80DC9628_96B2_0B61_41D1_EC0F96411FC2",
+    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.ThumbnailList_881F2652_97D2_0B21_41E2_7C5FB1597965_playlist, 0, '#000000')"
+   },
+   {
+    "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer); this.setEndToItemIndex(this.ThumbnailList_881F2652_97D2_0B21_41E2_7C5FB1597965_playlist, 1, 0)",
+    "class": "VideoPlayListItem",
+    "player": "this.MainViewerVideoPlayer",
+    "media": "this.video_801D3D89_9756_3923_41D6_1BDB63BADD70",
+    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.ThumbnailList_881F2652_97D2_0B21_41E2_7C5FB1597965_playlist, 1, '#000000')"
    }
   ]
  },
@@ -1890,7 +1910,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "buttonZoomIn": "this.IconButton_4EEC4AA6_5E2B_1FC3_41BA_7BB1D3A7F411"
  },
  {
-  "id": "playList_88C524E1_97D2_08E3_41DB_C1FE39557C1B",
+  "id": "playList_B72AFF46_97D2_1921_41C4_D2A2EE0E5698",
   "class": "PlayList",
   "items": [
    {
@@ -1902,7 +1922,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   ]
  },
  {
-  "id": "playList_88C514E1_97D2_08E3_41D5_3FDE56EE69BA",
+  "id": "playList_B72ADF47_97D2_192F_41E0_61A6268EEF3E",
   "class": "PlayList",
   "items": [
    {
@@ -1912,6 +1932,18 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "media": "this.map_8D053ADB_9772_3B27_41E2_3196E76F64F3"
    }
   ]
+ },
+ {
+  "duration": 1000,
+  "id": "effect_B722A3D5_97D6_0923_41C0_36B2EF02F096",
+  "class": "FadeInEffect",
+  "easing": "cubic_in_out"
+ },
+ {
+  "duration": 1000,
+  "id": "effect_B722B3D5_97D6_0922_41B9_9858029B4726",
+  "class": "FadeOutEffect",
+  "easing": "cubic_in_out"
  },
  {
   "id": "audio_835073D3_96B2_0920_41C5_61484D4386FB",
@@ -2394,6 +2426,73 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "paddingBottom": 10,
     "itemLabelFontColor": "#FFFFFF",
     "itemPaddingTop": 3,
+    "height": 92,
+    "width": "23.01%",
+    "itemThumbnailShadowColor": "#000000",
+    "scrollBarWidth": 10,
+    "layout": "horizontal",
+    "class": "ThumbnailList",
+    "scrollBarMargin": 2,
+    "itemThumbnailShadowOpacity": 0.54,
+    "rollOverItemBackgroundOpacity": 0,
+    "itemMode": "normal",
+    "itemVerticalAlign": "middle",
+    "itemOpacity": 1,
+    "rollOverItemLabelFontWeight": "bold",
+    "itemThumbnailShadowHorizontalLength": 3,
+    "shadow": false,
+    "itemHorizontalAlign": "center",
+    "itemLabelTextDecoration": "none",
+    "minWidth": 20,
+    "itemThumbnailShadow": true,
+    "paddingLeft": 20,
+    "paddingRight": 20,
+    "itemThumbnailHeight": 75,
+    "itemThumbnailWidth": 75,
+    "itemBackgroundColor": [],
+    "itemThumbnailOpacity": 1,
+    "borderSize": 0,
+    "borderRadius": 5,
+    "id": "ThumbnailList_881F2652_97D2_0B21_41E2_7C5FB1597965",
+    "itemBorderRadius": 0,
+    "scrollBarOpacity": 0.5,
+    "verticalAlign": "top",
+    "minHeight": 20,
+    "itemBackgroundOpacity": 0,
+    "scrollBarVisible": "rollOver",
+    "itemLabelFontStyle": "normal",
+    "itemLabelFontSize": 14,
+    "itemPaddingLeft": 3,
+    "backgroundOpacity": 0,
+    "itemThumbnailShadowSpread": 1,
+    "itemLabelFontWeight": "normal",
+    "itemBackgroundColorRatios": [],
+    "data": {
+     "name": "ThumbnailList35762"
+    },
+    "paddingTop": 10,
+    "itemThumbnailShadowVerticalLength": 3,
+    "itemLabelPosition": "bottom",
+    "itemThumbnailScaleMode": "fit_outside",
+    "playList": "this.ThumbnailList_881F2652_97D2_0B21_41E2_7C5FB1597965_playlist",
+    "itemPaddingBottom": 3,
+    "itemThumbnailBorderRadius": 5,
+    "scrollBarColor": "#FFFFFF",
+    "itemLabelHorizontalAlign": "center",
+    "itemThumbnailShadowBlurRadius": 8,
+    "itemBackgroundColorDirection": "vertical",
+    "gap": 13
+   },
+   {
+    "horizontalAlign": "left",
+    "itemLabelFontFamily": "Arial",
+    "selectedItemLabelFontColor": "#FFCC00",
+    "itemLabelGap": 8,
+    "itemPaddingRight": 3,
+    "selectedItemLabelFontWeight": "bold",
+    "paddingBottom": 10,
+    "itemLabelFontColor": "#FFFFFF",
+    "itemPaddingTop": 3,
     "height": 82.5,
     "width": "26.327%",
     "itemThumbnailShadowColor": "#000000",
@@ -2412,14 +2511,14 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "itemLabelTextDecoration": "none",
     "minWidth": 1,
     "itemThumbnailShadow": true,
-    "paddingLeft": 20,
+    "visible": false,
     "paddingRight": 20,
     "itemThumbnailHeight": 75,
     "itemThumbnailWidth": 100,
     "itemBackgroundColor": [],
     "itemThumbnailOpacity": 1,
     "borderSize": 0,
-    "borderRadius": 5,
+    "paddingLeft": 20,
     "id": "ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B",
     "itemBorderRadius": 0,
     "data": {
@@ -2427,7 +2526,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     },
     "verticalAlign": "top",
     "minHeight": 1,
-    "itemBackgroundOpacity": 0,
+    "borderRadius": 5,
     "scrollBarVisible": "rollOver",
     "itemLabelFontStyle": "normal",
     "scrollBarOpacity": 0.5,
@@ -2438,6 +2537,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "itemBackgroundColorRatios": [],
     "paddingTop": 10,
     "itemThumbnailShadowVerticalLength": 3,
+    "itemBackgroundOpacity": 0,
     "itemLabelPosition": "bottom",
     "itemLabelFontSize": 14,
     "playList": "this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B_playlist",
@@ -2591,7 +2691,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "gap": 10
  }
 ], 
- "start": "this.playAudioList([this.audio_835073D3_96B2_0920_41C5_61484D4386FB, this.audio_80D03488_96B2_0F20_41B6_5C09AAB528E3]); this.syncPlaylists([this.thumbnaillist5245_playlist,this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B_playlist,this.mainPlayList]); this.mainPlayList.set('selectedIndex', 0); this.playList_88C514E1_97D2_08E3_41D5_3FDE56EE69BA.set('selectedIndex', 0)",
+ "start": "this.playAudioList([this.audio_835073D3_96B2_0920_41C5_61484D4386FB, this.audio_80D03488_96B2_0F20_41B6_5C09AAB528E3]); this.syncPlaylists([this.thumbnaillist5245_playlist,this.ThumbnailList_881F2652_97D2_0B21_41E2_7C5FB1597965_playlist,this.ThumbnailList_6618B1BF_44D8_DA57_41A6_0D2589AAC96B_playlist,this.mainPlayList]); this.mainPlayList.set('selectedIndex', 0); this.playList_B72ADF47_97D2_192F_41E0_61A6268EEF3E.set('selectedIndex', 0)",
  "mouseWheelEnabled": true,
  "horizontalAlign": "left",
  "paddingBottom": 0,
